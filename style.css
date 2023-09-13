@@ -2,13 +2,12 @@ body {
     height: 100vh;
     max-height: 100vh;
     margin: 0;
-    padding: 0px 12px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
-    background-color: rgb(169, 169, 169);
-    color: rgb(34, 50, 34);
+    background-color: rgb(120, 159, 199);
+    color: rgb(4, 27, 37);
 }    
 
 .header {
@@ -19,6 +18,8 @@ body {
     align-items: center;
     padding-bottom: 40px;
     padding-top: 12px;
+    background-color: rgb(0, 0, 146);
+    color: white;
 }
 
 .content {
@@ -34,36 +35,39 @@ body {
 .buttons {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 22px;
 }
 
 .btn {
     background-color: rgb(255, 255, 255);
-    color: black;
+    color: rgb(0, 38, 121);
     font-weight: bold;
     font-size: 1em;
     border-radius: 5px;
-    border: 2px solid black;
+    border: 2px solid rgb(0, 4, 120);
     height: 3em;
     width: 10em;
 }
 
+.rainbowBtn {
+    color: rgb(121, 0, 214);
+    border: 2px inset rgb(128, 0, 197);
+}
+
 .square {
-    max-width: 800px;
-    max-height: 800px;
-    width: 450px;
-    height: 450px;
-    min-width: 300px;
-    min-height: 300px;
-    background-color: rgb(216, 216, 216);
-    border-radius: 5px;
+    max-width: 500px;
+    width: 100%;
+    min-width: 250px;
+    background-color: rgb(215, 234, 249);
+    border-radius: 15px;
+    border: 10px outset rgb(0, 14, 99);
     display: grid;
 }
 
 .grid-item {
-    border: 1px solid rgb(200, 200, 200);
-    border-radius: 2px;
+    border-radius: 10px;
 }
 
 .footer {
