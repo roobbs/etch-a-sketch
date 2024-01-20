@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ETCH-A-SKETCH</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
-</head>
-<body>
-    <header class="header"> ETCH-A-SKETCH </header>
+  </head>
+  <body>
+    <header class="header">ETCH-A-SKETCH</header>
     <main class="content">
-        <div class="buttons">
-            <div>Choose a color
-                <input class="color" type="color" value="#023145">  
-            </div>
-            <button class="btn colorBtn">Color mode</button>
-            <button class="btn rainbowBtn">Rainbow mode</button>
-            <button class="btn eraserBtn">Eraser</button>
-            <button class="btn clearBtn">Clear</button>
-            <div>
-                <div class="size"></div>
-                <input class="btn sizeInput" type="range" value="16" min="1" max="64">
-            </div>
+      <div class="buttons">
+        <div class="colorChoose">
+          <div>Choose a color</div>
+          <input class="color" type="color" value="#38FF3B" />
         </div>
-        <div class="square">
-            
+        <button class="btn colorBtn">Color mode</button>
+        <button class="btn rainbowBtn">Rainbow mode</button>
+        <button class="btn eraserBtn">Eraser</button>
+        <button class="btn clearBtn">Clear</button>
+        <div>
+          <div class="size"></div>
+          <input
+            class="btn sizeInput"
+            type="range"
+            value="5"
+            min="1"
+            max="64"
+          />
         </div>
-    </main> 
-    <footer class="footer">Created by: <a href="https://github.com/roobbs" target="_blank"> Roobbs </a></footer>   
-</body>
+      </div>
+      <div class="square"></div>
+    </main>
+    <footer class="footer">
+      Created by:
+      <a href="https://github.com/roobbs" target="_blank"> Roobbs </a>
+    </footer>
+  </body>
 </html>

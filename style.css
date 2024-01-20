@@ -1,91 +1,102 @@
 body {
-    height: 100vh;
-    max-height: 100vh;
-    margin: 0;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-    background-color: rgb(120, 159, 199);
-    color: rgb(4, 27, 37);
-}    
+  height: 100vh;
+  max-height: 100vh;
+  margin: 0;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(120, 159, 199);
+  color: rgb(4, 27, 37);
+}
 
 .header {
-    font-size: 5em;
-    font-weight: bolder;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 40px;
-    padding-top: 12px;
-    background-color: rgb(0, 0, 146);
-    color: white;
+  font-size: 3rem;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(0, 0, 146);
+  color: white;
 }
 
 .content {
-    display: flex;
-    flex: 1;
-    justify-content: space-evenly;
-    padding: 1em 5em;
-    margin-bottom: 1em;
-    font-weight: 700;
-    gap: 15px;
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  padding: 1.5em 5rem;
+  gap: 2rem;
 }
 
 .buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.colorChoose {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+input[type="color"] {
+  background-color: transparent;
+  border: none;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  height: 3rem;
+  width: 3rem;
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 100px;
+  border: 1px solid rgb(52, 52, 52);
 }
 
 .btn {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 38, 121);
-    font-weight: bold;
-    font-size: 1em;
-    border-radius: 5px;
-    border: 2px solid rgb(0, 4, 120);
-    height: 3em;
-    width: 10em;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 38, 121);
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 2px solid rgb(0, 4, 120);
+  height: 3em;
+  width: 10em;
 }
 
 .rainbowBtn {
-    color: rgb(121, 0, 214);
-    border: 2px inset rgb(128, 0, 197);
+  color: rgb(121, 0, 214);
+  border: 2px inset rgb(128, 0, 197);
 }
 
 .square {
-    max-width: 500px;
-    width: 100%;
-    min-width: 250px;
-    background-color: rgb(215, 234, 249);
-    border-radius: 15px;
-    border: 10px outset rgb(0, 14, 99);
-    display: grid;
-}
-
-.grid-item {
-    border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  min-width: 250px;
+  background-color: rgb(243, 248, 255);
+  border-radius: 15px;
+  border: 10px outset rgb(0, 19, 146);
+  display: grid;
+  overflow: hidden;
 }
 
 .footer {
-    display: flex;
-    justify-content: center;
-    color: rgb(26, 52, 0);
-    font-weight: bold;
-    padding-top: 1em;
-    padding-bottom: 1em;
-
+  display: flex;
+  justify-content: center;
+  color: rgb(26, 52, 0);
+  font-weight: bold;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
-a{
-    color: rgb(86, 0, 192);
-    font-weight: 900;
-    text-decoration: none;
-    
-}  
-a:hover{
-    color: rgb(155, 255, 220);
+a {
+  color: rgb(86, 0, 192);
+  font-weight: 900;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(155, 255, 220);
 }
