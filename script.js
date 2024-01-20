@@ -32,7 +32,7 @@ function createGridItems(size) {
     let gridItem = document.createElement("div");
     gridItem.classList.add("grid-item");
     square.appendChild(gridItem);
-    gridItem.addEventListener("mousemove", () => {
+    gridItem.addEventListener("mouseover", () => {
       //   gridItem.classList.remove("grid-item");
       //   gridItem.classList.add("hovered");
       switch (currentMode) {
