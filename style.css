@@ -1,11 +1,11 @@
 body {
+  height: auto;
   height: 100vh;
-  max-height: 100vh;
   margin: 0;
   font-family: Tahoma, Geneva, Verdana, sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-items: stretch;
   background-color: rgb(120, 159, 199);
   color: rgb(4, 27, 37);
 }
@@ -22,19 +22,20 @@ body {
 }
 
 .content {
-  display: flex;
-  flex: 1;
-  justify-content: space-evenly;
-  padding: 1.5em 5rem;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1.5em 1rem;
+  gap: 1rem;
 }
-
 .buttons {
+  height: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
 }
 .colorChoose {
   display: flex;
@@ -71,11 +72,14 @@ input[type="color"]::-webkit-color-swatch {
   color: rgb(121, 0, 214);
   border: 2px inset rgb(128, 0, 197);
 }
-
+.squareContainer {
+  display: flex;
+  flex: 1;
+}
 .square {
-  max-width: 500px;
-  width: 100%;
-  min-width: 250px;
+  width: 70%;
+  aspect-ratio: 1/1;
+  height: min-content;
   background-color: rgb(243, 248, 255);
   border-radius: 15px;
   border: 10px outset rgb(0, 19, 146);
@@ -85,11 +89,12 @@ input[type="color"]::-webkit-color-swatch {
 
 .footer {
   display: flex;
+  gap: 0.5rem;
   justify-content: center;
-  color: rgb(26, 52, 0);
+  color: rgb(0, 21, 255);
   font-weight: bold;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.228);
 }
 
 a {
