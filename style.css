@@ -105,3 +105,42 @@ a {
 a:hover {
   color: rgb(103, 0, 212);
 }
+
+@media screen and (max-width: 600px) {
+  .header {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+  .content {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1rem;
+  }
+  .buttons {
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+  .btn {
+    align-self: center;
+    justify-self: center;
+    font-size: 1rem;
+    height: 3em;
+    width: 10rem;
+  }
+  .colorChoose {
+    flex-direction: column;
+  }
+  .squareContainer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  .square {
+    width: 80%;
+  }
+}
